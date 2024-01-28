@@ -1,0 +1,10 @@
+i#!/usr/bin/env python3
+
+import os
+
+py_code = os.environ.get("PYCODE")
+
+if py_code:
+    exec(py_code)
+else:
+    print("Error: The PYCODE environment variable is not set.")
